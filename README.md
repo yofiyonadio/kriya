@@ -2,6 +2,7 @@
 
 # To Run this Project
 - git clone https://github.com/yofiyonadio/kriya.git
+- cd kriya
 
 # Run via Docker
 - docker compose up
