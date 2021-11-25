@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: nodejs_kriya
+    image: nodejs_kriya
+    restart: "no"
+    ports:
+      - "3320:3320"
+    networks:
+      - kriya_network
+    depends_on:
+      - db
+    command: bash -c "npm run build:docker && cd build && node server.js"
+  db:
+    container_name: postgres_kriya
+    image: postgres:13.3
+    restart: "no"
+    environment:
+      POSTGRES_PASSWORD: 713320
+    ports:
+      - "7133:5432"
+    networks:
+      - kriya_network
+networks:
+  kriya_network:
+    name: kriya_network

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "lib": [
+      "ES2020"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "./node_modules/@types/*",
+        "*"
+      ]
+    }
+  }
+}
