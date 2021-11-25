@@ -1,4 +1,4 @@
-yofi x kriya
+# yofi x kriya
 
 # To Run this Project
 - git clone https://github.com/yofiyonadio/kriya.git
