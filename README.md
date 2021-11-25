@@ -23,4 +23,8 @@
 Server will run at http://localhost:3320/api/v1.0
 
 # Note
-If you note use docker, make sure you run postgress first
+If you note use docker, make sure you run Postgress first
+
+You can test the API use postman collection named:
+Kriya Test.postman_collection.json
+at root of this project
